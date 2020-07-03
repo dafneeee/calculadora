@@ -5,28 +5,34 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#7E22AF"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:layout_width="358dp"
+        android:layout_height="48dp"
         android:layout_margin="20dp"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent">
+        android:orientation="horizontal">
+
         <TextView
             android:id="@+id/solucion"
-            android:background="#1000"
-            android:text="0"
-            android:textSize="24sp"
+            android:layout_width="313dp"
+            android:layout_height="55dp"
             android:layout_gravity="center"
-            android:layout_height="50dp"
-            android:layout_width="match_parent"/>
+            android:layout_marginRight="20dp"
+            android:background="#B34CAF50"
+            android:text="0"
+            android:gravity="left"
+            android:textColor="#FFFFFF"
+            android:textSize="38sp" />
     </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_margin="20dp"
         android:layout_height="wrap_content"
-        android:layout_width="match_parent">
+        android:layout_width="match_parent"
+        >
 
         <Button
             android:id="@+id/num_siete"
@@ -37,29 +43,32 @@
             android:text="7"
             android:textSize="24sp"/>
         <Button
-            android:id="@+id/num_siete"
+            android:id="@+id/num_ocho"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
-            android:text="7"
+            android:text="8"
             android:textSize="24sp"/>
         <Button
-            android:id="@+id/num_siete"
+            android:id="@+id/num_nueve"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
-            android:text="7"
+            android:text="9"
             android:textSize="24sp"/>
+
         <Button
-            android:id="@+id/num_siete"
-            android:layout_weight="1"
+            android:id="@+id/num_x"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
-            android:text="X"
-            android:textSize="24sp"/>
+            android:layout_weight="1"
+            android:background="#AD4CAF50"
+            android:text="*"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
 
     </LinearLayout>
     <LinearLayout
@@ -73,112 +82,144 @@
         android:layout_width="match_parent">
 
         <Button
-            android:id="@+id/num_siete"
+            android:id="@+id/num_cuatro"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
-            android:text="7"
+            android:text="4"
             android:textSize="24sp"/>
         <Button
-            android:id="@+id/num_siete"
+            android:id="@+id/num_cinco"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
-            android:text="7"
+            android:text="5"
             android:textSize="24sp"/>
         <Button
-            android:id="@+id/num_siete"
+            android:id="@+id/num_seis"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
-            android:text="7"
+            android:text="6"
             android:textSize="24sp"/>
         <Button
-            android:id="@+id/num_siete"
+            android:id="@+id/num_division"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
+            android:background="#B24CAF50"
+            android:textColor="#FFFFFF"
             android:text="/"
             android:textSize="24sp"/>
 
     </LinearLayout>
+
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_width="match_parent">
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
         android:orientation="horizontal"
         android:layout_margin="20dp"
         android:layout_height="wrap_content"
         android:layout_width="match_parent">
 
         <Button
-            android:id="@+id/num_siete"
-            android:layout_weight="1"
+            android:id="@+id/num_uno"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
-            android:text="7"
-            android:textSize="24sp"/>
+            android:layout_weight="1"
+            android:text="1"
+            android:textSize="24sp" />
+
         <Button
-            android:id="@+id/num_siete"
-            android:layout_weight="1"
+            android:id="@+id/num_dos"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
-            android:text="7"
-            android:textSize="24sp"/>
+            android:layout_weight="1"
+            android:text="2"
+            android:textSize="24sp" />
+
         <Button
-            android:id="@+id/num_siete"
-            android:layout_weight="1"
+            android:id="@+id/num_tres"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
-            android:text="7"
-            android:textSize="24sp"/>
+            android:layout_weight="1"
+            android:text="3"
+            android:textSize="24sp" />
+
         <Button
-            android:id="@+id/num_siete"
-            android:layout_weight="1"
+            android:id="@+id/num_menos"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
-            android:text="+"
-            android:textSize="24sp"/>
+            android:layout_weight="1"
+            android:background="#B34CAF50"
+            android:textColor="#FFFFFF"
+            android:text="-"
+            android:textSize="24sp" />
+
     </LinearLayout>
-    <Button
-        android:id="@+id/num_siete"
-        android:layout_weight="1"
-        android:layout_width="0dp"
+
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="20dp"
-        android:text="7"
-        android:textSize="24sp"/>
-    <Button
-        android:id="@+id/num_siete"
-        android:layout_weight="1"
-        android:layout_width="0dp"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
         android:layout_height="wrap_content"
-        android:layout_marginRight="20dp"
-        android:text="7"
-        android:textSize="24sp"/>
-    <Button
-        android:id="@+id/num_siete"
-        android:layout_weight="1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="20dp"
-        android:text="7"
-        android:textSize="24sp"/>
-    <Button
-        android:id="@+id/num_siete"
-        android:layout_weight="1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="+"
-        android:textSize="24sp"/>
+        android:layout_width="match_parent">
+
+        <Button
+            android:id="@+id/num_CE"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:text="CE"
+            android:background="#AD4CAF50"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/num_cero"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/num_equal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:textColor="#FBFBFB"
+            android:background="#B14CAF50"
+            android:text="="
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/num_suma"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:textColor="#EFEFEF"
+            android:background="#AE4CAF50"
+            android:text="+"
+            android:textSize="24sp" />
+
+    </LinearLayout>
 
 </LinearLayout>
